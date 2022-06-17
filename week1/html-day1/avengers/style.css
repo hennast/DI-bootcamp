@@ -1,0 +1,43 @@
+.header {
+	background: black;
+	color: white;
+	padding-bottom: 5%;
+	margin-top: 0%;
+}
+ul{
+	list-style: none;
+}
+li {
+	float: right;
+	padding-top: 1px;
+	font-size: 26px;
+	margin-right: 2%;
+	margin-top: 4px;
+	font-family: 'PT Sans', sans-serif;
+
+}
+.thor {
+	background: url(thor.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	padding-top: 20%;
+	padding-left: 4%;
+	padding-right: 20%;
+}
+
+.thor h1 {
+	font-size: 78px;
+	line-height: 0px;
+	color: silver;
+}
+
+.thor p {
+	margin-right: 50%;
+	color: silver;
+}
+
+.thor p:hover {
+	color: black;
+}
