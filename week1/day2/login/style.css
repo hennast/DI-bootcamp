@@ -33,3 +33,10 @@
 }
 
 
+.signup {
+  background-image: linear-gradient(to bottom right, black, purple);
+  float: right;
+  width: 50%;
+  margin: 0;
+  height: 100%;
+}
