@@ -8,6 +8,7 @@
 	text-align: center;
 	line-height: 4%;
 	background-color: ghostwhite;
+	padding-top: 7%;
 }
 .login p{
 	font-size: 60px;
@@ -27,4 +28,8 @@
 	padding-left: 20%;
 	border-radius: 5px;
 }
+.login input[type=checkbox] {
+  display: absolute;
+}
+
 
