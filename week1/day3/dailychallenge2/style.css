@@ -6,13 +6,29 @@
 
 }
 .med {
-	background-color: red;
+	background-color: yellow;
 }
  
 .light {
-	background-color: blue;
+	background-color: peachpuff;
 }
 
 .dark {
-	background-color: green;
+	background-color: brown;
+}
+
+.one {
+	background-color: whitesmoke;
+}
+
+.two {
+	background-color: lightgray;
+}
+
+.three {
+	background-color: gray;
+}
+
+.four {
+	background-color: black;
 }
