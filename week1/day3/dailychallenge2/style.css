@@ -1,0 +1,18 @@
+.grid {
+	display: grid;
+	grid-template-rows: repeat(16, 30px);
+	grid-template-columns: repeat(16, 30px);
+	grid-gap: 5px;
+
+}
+.med {
+	background-color: red;
+}
+ 
+.light {
+	background-color: blue;
+}
+
+.dark {
+	background-color: green;
+}
