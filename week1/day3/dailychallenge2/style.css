@@ -32,3 +32,18 @@
 .four {
 	background-color: black;
 }
+
+.white {
+	background-color: white;
+}
+
+.pink {
+	background-color: pink;
+}
+
+.magenta {
+	background-color: magenta;
+}
+#nogap {
+	grid-gap: 0px;
+}
