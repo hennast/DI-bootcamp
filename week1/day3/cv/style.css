@@ -26,3 +26,14 @@
 .skills {
 	background: navy;
 }
+
+
+/*media queries */
+
+@media all and (max-width: 768px) 
+{
+	.resume  { 
+		display: flex; 
+		flex-direction: column;
+	}
+}
