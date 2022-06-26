@@ -35,64 +35,64 @@ console.log (myWatchedSeries);
 // exercise 5
 console.log (typeof(15))
 // Prediction: number
-// Actual:
+// Actual: number
 
 console.log(typeof(5.5))
 // Prediction: number
-// Actual:
+// Actual: number
 
-typeof(NaN)
-// Prediction:
-// Actual:
-
-typeof("hello")
+console.log(typeof(NaN))
 // Prediction: string
-// Actual:
+// Actual: number
 
-typeof(true)
+console.log(typeof("hello"))
+// Prediction: string
+// Actual: string
+
+console.log(typeof(true))
 // Prediction: boolean
-// Actual:
+// Actual: boolean
 
-typeof(1 != 2)
+console.log(typeof(1 != 2))
 // Prediction: number
-// Actual:
+// Actual: boolean
 
-"hamburger" + "s"
-// Prediction:
-// Actual:
+console.log("hamburger" + "s")
+// Prediction: hamburgers
+// Actual: hamburgers
 
-"hamburgers" - "s"
-// Prediction:
-// Actual:
+console.log("hamburgers" - "s")
+// Prediction: hamburger
+// Actual: NaN
 
-"1" + "3"
-// Prediction:
-// Actual:
+console.log("1" + "3")
+// Prediction: 1 3
+// Actual:13
 
-"1" - "3"
-// Prediction:
-// Actual:
+console.log("1" - "3")
+// Prediction:NaN
+// Actual: -2
 
-"johnny" + 5
-// Prediction:
-// Actual:
+console.log("johnny" + 5)
+// Prediction: johnny5 
+// Actual: johnny5
 
-"johnny" - 5
-// Prediction:
-// Actual:
+console.log("johnny" - 5)
+// Prediction: NaN
+// Actual: NaN
 
 99 * "hello"
 // Prediction:
 // Actual:
 
-1 != 1
-// Prediction:
+console.log(1 != 1)
+// Prediction: false
 // Actual:
 
-1 == "1"
-// Prediction:
+console.log(1 == "1")
+// Prediction: true
 // Actual:
 
-1 === "1"
-// Prediction:
-// Actual:
+console.log(1 === "1")
+// Prediction: false
+// Actual: false
