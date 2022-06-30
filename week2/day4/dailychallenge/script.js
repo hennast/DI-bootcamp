@@ -4,15 +4,13 @@ let arr = hello.split(",")
 console.log (arr)
 
 let z = null
-for (var i = 0; i < arr.length-1; i++) {
+for (var i = 0; i < arr.length; i++) {
     let x = arr[i].length  //1  2  
-    let y = arr [i + 1].length	//2  3
-  	if (y > x) {
-  		z = y
-  	}
-  	else {
+    //let y = arr [i + 1].length	//2  3
+  	if (x > z) {
   		z = x
-  	}	
+  	}
+ 	
  
 
 }
