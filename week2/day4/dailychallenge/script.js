@@ -4,6 +4,7 @@ let arr = hello.split(",")
 console.log (arr)
 
 let z = null
+//findining longest length
 for (var i = 0; i < arr.length; i++) {
     let x = arr[i].length  //1  2  
     //let y = arr [i + 1].length	//2  3
