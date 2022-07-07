@@ -11,6 +11,11 @@
 
 .box {
 	border: 1px solid lightgray;
+
+}
+
+.hide{
+	display: none;
 }
 
 
