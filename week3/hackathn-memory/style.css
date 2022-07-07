@@ -16,7 +16,14 @@
 
 .hide{
 	display: none;
+
 }
 
+h1 {
+	text-align: center;
+}
 
+.match {
+	font-size: 40px;
+}
 
