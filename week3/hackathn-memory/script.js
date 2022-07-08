@@ -73,10 +73,11 @@ for (var i = 0; i < 16; i++) {
 	
 }
 
-let instr = document.getElementsByClassName('instructions')
+let instr = document.getElementsByClassName('instructions')[0]
 
 instr.addEventListener("click", function() {
 		console.log(instr)  
+		alert("To play\n1. click on two tiles\n2. if tiles ar a match, they will remain picture side up\n3.if pictures are not a match, they will revert to tile\n4.Remember where the picture is to get all 8 matches\n GOOD LUCK!!")
 });
 
 
