@@ -2,8 +2,13 @@
 // place them on grid as colored square
 
 let game = document.getElementById("Memorygame")
-let match = document.getElementsByClassName ("match")
 
+
+//score calculator 
+let score = document.getElementsByClassName('score')[0]
+console.log(score)
+let x = 0 
+score.textContent = x
 
 let pics = ["banana.jpg", "strawberry.jpg", 
 			 "strawberry.jpg", 
@@ -20,8 +25,8 @@ for (var i = 0; i < 16; i++) {
 	 div.classList.add ("box")
 	 game.appendChild(div)
 	 div.style.backgroundColor = "blue"
-	 div.style.height = 135 + 'px'
-	 let img = document.createElement('img')
+	 div.style.height = 135 + 'px'        /// up until here creating the grid itself, the 'cards'
+	 let img = document.createElement('img')   //adding invisble pics to the element
 	 img.setAttribute('src', pics[i])
 	 img.classList.add ("hide")
 	 img.id = pics[i]
@@ -38,14 +43,20 @@ for (var i = 0; i < 16; i++) {
 	 		console.log (Check)
 	 		if (Check[0].src == Check[1].src) {
 	 			console.log("match")
-	 			Check.splice(0, 2)
+				
 	 			
-
+	 			
+	 			Check.splice(0, 2)
+	 			x++
+	 			score.textContent = x
+	 			if (x == 8) {
+					
+					}
+	 			console.log(x)
 	 			}
 	 		else {
 
 	 			console.log('not a match')
-	 			
 	 			setTimeout(()=>{
 				Check[0].style.display = 'none'
 	 			Check[1].style.display = 'none'
@@ -62,9 +73,12 @@ for (var i = 0; i < 16; i++) {
 	
 }
 
+let instr = document.getElementsByClassName('instructions')
 
+instr.addEventListener("click", function() {
+		console.log(instr)  
+});
 
-//create array of pictures
 
 // when clicked - show image
 
