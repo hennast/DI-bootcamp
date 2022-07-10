@@ -1,4 +1,7 @@
 /**/
+.header {
+	margin-bottom: 5px;
+}
 .grid {
 
 	display: grid;
@@ -30,7 +33,7 @@ h1 {
 button {
 	margin-left: 30%;
 	margin-right: 30%;
-	width: 40%;
+	width: 20%;
 }
 
 .score {

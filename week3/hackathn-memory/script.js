@@ -35,6 +35,7 @@ for (var i = 0; i < 16; i++) {
 	 img.style.margin = 'auto'
 	 img.style.marginTop = 6 + 'px'
 	 div.appendChild (img)
+
 	 div.addEventListener('click',function(){
 	 	div.firstElementChild.style.display = 'block'
 	 	
@@ -44,13 +45,14 @@ for (var i = 0; i < 16; i++) {
 	 		console.log (Check)
 	 		if (Check[0].src == Check[1].src) {
 	 			console.log("match")
-
+	 			Check[0].parentElement.removeEventListener('click', function(){})
 	 			
 	 			Check.splice(0, 2)
 	 			x++
 	 			score.textContent = x
 	 			if (x == 8) {
-					
+					alert('you win')
+
 					}
 	 			console.log(x)
 	 			}
@@ -71,8 +73,7 @@ for (var i = 0; i < 16; i++) {
 	 	
 	 })
 
-	 let newGame = document.getElementsByTagName('input')
-	 console.log(newGame)
+	
 	
 }
 
@@ -83,6 +84,15 @@ instr.addEventListener("click", function() {
 		alert("To play\n1. click on two tiles\n2. if tiles ar a match, they will remain picture side up\n3.if pictures are not a match, they will revert to tile\n4.Remember where the picture is to get all 8 matches\n GOOD LUCK!!")
 });
 
+let newGame = document.getElementsByClassName ('newgame')[0]
+console.log(newGame)
+newGame.addEventListener ('click', function(){
+	let y = confirm('this will reload page')
+	if (y == true) {
+		window.location.reload()
+	}
+	
+})
 
 // when clicked - show image
 
