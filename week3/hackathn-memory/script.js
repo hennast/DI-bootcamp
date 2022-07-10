@@ -35,26 +35,36 @@ for (var i = 0; i < 16; i++) {
 	 img.style.margin = 'auto'
 	 img.style.marginTop = 6 + 'px'
 	 div.appendChild (img)
-
+	
 	 div.addEventListener('click',function(){
+	 	if (div.style.backgroundColor == 'blue'){ 
+	 	
+	 	
 	 	div.firstElementChild.style.display = 'block'
 	 	
+	 	if (Check.includes(img))
+	 	{}
+	 	else {
 	 	Check.push (img)
 	 	
 	 	if (Check.length == 2){
 	 		console.log (Check)
 	 		if (Check[0].src == Check[1].src) {
 	 			console.log("match")
-	 			Check[0].parentElement.removeEventListener('click', function(){})
-	 			
+	 			Check[0].parentElement.style.backgroundColor = 'white'
+	 			Check[0].style.display = 'none'
+	 			Check[1].parentElement.style.backgroundColor = 'white'
+	 			Check[1].style.display = 'none' 
+	 			event.stopPropagation() 
 	 			Check.splice(0, 2)
 	 			x++
 	 			score.textContent = x
 	 			if (x == 8) {
 					alert('you win')
 
+
 					}
-	 			console.log(x)
+	 			
 	 			}
 	 		else {
 
@@ -70,9 +80,10 @@ for (var i = 0; i < 16; i++) {
 	 			}
 
 	 	}
-	 	
+	 	}
+	 }
+	 
 	 })
-
 	
 	
 }
