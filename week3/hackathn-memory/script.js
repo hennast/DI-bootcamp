@@ -17,6 +17,7 @@ let pics = ["banana.jpg", "strawberry.jpg",
 			"pear.jpg","banana.jpg", "lemon.png",
 			  "cherry.png",
 			"lemon.png", "watermelon.png"]
+pics.sort(function(a, b){return 0.5 - Math.random()});
 let Check = []
 
 for (var i = 0; i < 16; i++) {
@@ -43,8 +44,7 @@ for (var i = 0; i < 16; i++) {
 	 		console.log (Check)
 	 		if (Check[0].src == Check[1].src) {
 	 			console.log("match")
-				
-	 			
+
 	 			
 	 			Check.splice(0, 2)
 	 			x++
@@ -70,6 +70,9 @@ for (var i = 0; i < 16; i++) {
 	 	}
 	 	
 	 })
+
+	 let newGame = document.getElementsByTagName('input')
+	 console.log(newGame)
 	
 }
 
