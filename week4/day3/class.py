@@ -10,3 +10,4 @@ sample_dict = {
    }
 }
 print(sample_dict['class']['student']['marks']['history'])
+

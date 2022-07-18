@@ -15,17 +15,18 @@ print(word_dictionary)
 
 #2
 items_purchase = {
-  "Water": 1,
-  "Bread": 3,
-  "TV": 1000,
-  "Fertilizer": 20
+  'Water': 1,
+  'Bread': 3,
+  'TV': 1000,
+  'Fertilizer': 20
 }
 wallet = input('how much is in your wallet')
 wallet = int(wallet)
 print(wallet)
 you_can_afford = []
-for item, price in items_purchase.items():
+for value, price in items_purchase.items():
+    price = int(price)
     if wallet > price:
-        you_can_afford.append(item)
-you_can_afford = you_can_afford.sort()
-print(you_can_afford)
+        you_can_afford.append(items_purchase.keys())
+
+print(you_can_afford.sort())

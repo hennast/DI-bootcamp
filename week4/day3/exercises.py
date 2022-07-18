@@ -52,3 +52,5 @@ more_on_zara = {
 
 brand.update(more_on_zara)
 print(brand['number_stores'])
+
+users = ["Mickey","Minnie","Donald","Ariel","Pluto"]

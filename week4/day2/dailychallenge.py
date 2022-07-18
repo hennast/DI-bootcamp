@@ -16,7 +16,7 @@ print(multiplied)
 user_string = input('please input a word')
 user_string = user_string + " "
 x = 1
-no_duplicates = set()
+# no_duplicates = set()
 word = ""
 
 while x < len(user_string):
