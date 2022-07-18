@@ -21,4 +21,5 @@ class Pet_Dog(Dog):
 class Dalmation(Pet_Dog):
     pass
 dalmation = Dalmation("dog", 4, 14)
-
+dalmation.train()
+dalmation.do_a_trick()
