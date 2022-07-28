@@ -21,6 +21,6 @@ def check_letter(word,blank):
         not_in_word+=1
         extr.append(letter)
     print(blank)
-    print(extra)
+    print(extr)
     
 check_letter(word, blank)
