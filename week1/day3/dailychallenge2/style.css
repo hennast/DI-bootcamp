@@ -1,0 +1,49 @@
+.grid {
+	display: grid;
+	grid-template-rows: repeat(16, 30px);
+	grid-template-columns: repeat(16, 30px);
+	grid-gap: 5px;
+
+}
+.med {
+	background-color: yellow;
+}
+ 
+.light {
+	background-color: peachpuff;
+}
+
+.dark {
+	background-color: brown;
+}
+
+.one {
+	background-color: whitesmoke;
+}
+
+.two {
+	background-color: lightgray;
+}
+
+.three {
+	background-color: gray;
+}
+
+.four {
+	background-color: black;
+}
+
+.white {
+	background-color: white;
+}
+
+.pink {
+	background-color: pink;
+}
+
+.magenta {
+	background-color: magenta;
+}
+#nogap {
+	grid-gap: 0px;
+}

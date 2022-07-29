@@ -1,0 +1,68 @@
+body {
+}
+.header p {
+	float: left;
+	margin-left: 50px;
+	
+}
+.header button {
+	float: right;
+	margin-right: 50px;
+	padding: 12px 28px;
+}
+
+.header{
+	background-color: whitesmoke;
+	height: 50px;
+	margin: 0px;
+
+}
+button {
+	background-color: blue;
+	color: white;
+	border: none;
+}
+
+.home {
+	background: url(bg.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin-bottom: 2%;
+	margin-top: 0;
+}
+h1 {
+	padding-top: 170px;
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-bottom: 20px;
+	text-align: center;
+	color: white;
+}
+
+form {
+	padding-bottom: 170px;
+	padding-right: 26%;
+	padding-left: 41%;
+}
+
+.container {
+	display: flex;
+	flex-direction: vertical;
+	justify-content: space-evenly;
+	margin: auto;
+}
+.thing {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 15%;
+}
+
+.thing i {
+	width: 100%;
+	height: 100%;
+}
+.thing h6 {
+	font-size: 100%;
+	line-height: 2px;
+}

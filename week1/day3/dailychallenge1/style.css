@@ -1,0 +1,82 @@
+.mom {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 100%;
+	width: 100%;
+
+}
+
+.side {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 10%;
+}
+
+.a{
+	background-color: yellow;
+	height: 22%;
+	width: 100%;
+	border: solid;
+}
+
+.b {
+	background-color: yellow;
+	height: 22%;
+	width: 100%;
+	border: solid;
+	
+}
+
+.c {
+	background-color: yellow;
+	height: 22%;
+	width: 100%;
+	border: solid;
+}
+
+.d {
+	background-color: yellow;
+	height: 22%;
+	width: 100%;
+	border: solid;
+}
+
+.middle {
+	display: flex;
+	flex-direction: row;
+	height: 15%;
+	width: 78%;
+	justify-content: space-evenly;
+	margin: auto;
+}
+
+.middle .a {
+	background-color: yellow;
+	height: 100%;
+	width: 10%;
+	border: solid;
+}
+
+.middle .b {
+	background-color: yellow;
+	height: 100%;
+	width: 10%;
+	border: solid;
+}
+
+.middle .c {
+	background-color: yellow;
+	height: 100%;
+	width: 10%;
+	border: solid;
+}
+
+.middle .d {
+	background-color: yellow;
+	height: 100%;
+	width: 10%;
+	border: solid;
+}
+
