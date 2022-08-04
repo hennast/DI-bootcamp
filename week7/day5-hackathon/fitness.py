@@ -5,9 +5,10 @@ import random
 
 class Exercise:
     exercises = {}
-    def __init__(self, exercise: str, level: float):
+    def __init__(self, exercise: str, type, level: float):
         self.exercise = exercise
         self.level = level
+        self.type = type
         if self.level not in Exercise.exercises:
             Exercise.exercises[self.level] = [self]
         else:
@@ -17,10 +18,13 @@ class Exercise:
     def __repr__(self) -> str:
         return str(self.__dict__)
 
-beginner_lift = Exercise("lift 5", 1)
-beginner_run = Exercise("run 3", 1)
-intermediate_lift = Exercise("lift 10", 3.5)
-intermediate_run = Exercise("run 12", 3.8)
+beginner_lift = Exercise("lift 5", "strength", 1)
+beginner_run = Exercise("run 5", "speed", 1)
+intermediate_lift = Exercise("lift 10", "strength", 3.5)
+intermediate_run = Exercise("run 10", "speed", 3.8)
+advanced_lift = Exercise("lift 15", "strength", 7.3)
+advanced_run = Exercise("run 15", "speed", 9)
+
 
 
 
