@@ -1,0 +1,24 @@
+/*about me section*/
+.about-me {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2%;
+    justify-content: center;
+}
+.me-right {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding-left: 4%;
+    padding-right: 15%;
+    padding-top: 5%;
+    float: right;
+}
+.me-left{
+    float: left;
+}
+.mypic {
+    width: 15%;
+    border-radius: 40%;
+
+}
