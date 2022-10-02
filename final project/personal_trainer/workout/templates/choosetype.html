@@ -8,11 +8,11 @@
 	<title>Welcome</title>
 </head>
 
-<h1> Welcome! lets design your personal workout</h1>l
+<h1> Welcome! lets design your personal workout</h1>
 <h3>what kind of workout would you like to do today?</h3>
 <div class="ExcersizeType">
-<p>strength</p>
-<p>cardio</p>
-<p>speed</p>
-<p>endurance</p>
+    <a href = "{% url 'workout:strength' %}">strength </a>
+    <a href = "{% url 'workout:cardio' %}"> cardio</a>
+    <a href="{% url 'workout:speed' %}">speed</a>
+    <a href="{% url 'workout:endurance' %}">endurance</a>
 </div>
