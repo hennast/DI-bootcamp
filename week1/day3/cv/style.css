@@ -1,0 +1,39 @@
+.resume {
+	margin: 0;
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-columns: 25% 75%;
+}
+
+.title {
+	background: whitesmoke;
+	/*placement*/
+	grid-column-start: 1;
+	grid-column-end: 3;
+	/*text style*/
+	font-family: sans-serif;
+	font-size: 50px;
+	text-align: center;
+
+}
+
+
+.contact {
+	background: navy;
+
+}
+
+.skills {
+	background: navy;
+}
+
+
+/*media queries */
+
+@media all and (max-width: 768px) 
+{
+	.resume  { 
+		display: flex; 
+		flex-direction: column;
+	}
+}

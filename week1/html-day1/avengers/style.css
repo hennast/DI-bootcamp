@@ -1,0 +1,96 @@
+.header {
+	background: black;
+	color: white;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+}
+ul{
+	list-style: none;
+}
+li {
+	float: right;
+	padding-top: 1px;
+	font-size: 26px;
+	margin-right: 2%;
+	margin-top: 4px;
+	font-family: 'PT Sans', sans-serif;
+
+}
+.thor {
+	background: url(thor.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	padding-top: 19%;
+	padding-left: 6%;
+	padding-right: 22%;
+	padding-bottom: 7%;
+}
+
+.thor h1 {
+	font-size: 78px;
+	line-height: 0px;
+	color: silver;
+}
+
+.thor p {
+
+	color: silver;
+	margin-right: 20%;
+	
+}
+
+.thor p:hover {
+	color: black;
+}
+
+/*------------------------------------------
+  Responsive Grid Media Queries - 1280, 1024, 768, 480
+   1280-1024   - desktop (default grid)
+   1024-768    - tablet landscape
+   768-480     - tablet 
+   480-less    - phone landscape & smaller
+--------------------------------------------*/
+@media all and (min-width: 1024px) { 
+	.thor {
+		flex-direction: row;
+	}
+	
+
+}
+
+@media all and (min-width: 992px) and (max-width: 1024px) {
+	h1 {
+		font-size: 25px;
+	} 
+	.header {
+		background-color: red;
+	}
+	thor {
+		flex-direction: row;
+	}
+	
+}
+
+@media all and (min-width: 480px) and (max-width: 992px) { 
+	.thor h1 {
+		font-size: 25px;
+	} 
+	.header{
+			background-color: lightgreen;
+			color: white;
+		} 
+}
+
+@media all and (max-width: 480px)  {
+	.thor h1 {
+		font-size: 35px;
+		} 
+		.header{
+			background-color: yellow;
+			color: black;
+		} 
+}
