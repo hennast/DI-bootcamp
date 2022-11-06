@@ -13,6 +13,7 @@ console.log(score)
 let x = 0 
 score.textContent = x
 
+//array of pictures
 let pics = ["banana.jpg", "strawberry.jpg", 
 			 "strawberry.jpg", 
 			"apple.png", "kiwi.jpg", "cherry.png",  
