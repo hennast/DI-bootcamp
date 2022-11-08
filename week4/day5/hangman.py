@@ -9,25 +9,32 @@ while x < len(word):
     x+=1
 print(blank)
 extr = [] #empty array for guesses that arent in the word
+not_in_word = 0
 
-def check_letter(Theword):
+def check_letter(Theword = word):
     global blank, extr
-    not_in_word = 0
     letter = input("please input a letter")
     if letter in Theword:
-        idx = Theword.index(letter)
         blank = list(blank)
-        (blank)[idx] = letter
+        Theword = list(Theword)
+        for idx, value in enumerate(Theword):
+            if value == letter:
+                #idx = Theword.index(letter)
+                blank[idx] = letter
         blank = "".join(blank)
     else:
-        not_in_word+=1 #keeps track of bad guesses
         extr.append(letter)
     print(blank)
     print(extr)
+    print(len(extr))
     return blank, extr
 
   
 
 while word != blank:
-    check_letter(word)
-
+    check_letter()
+    if len(extr) == 5:
+        print("you have lost the game")
+        break
+if word == blank:
+    print("you have won the game")
