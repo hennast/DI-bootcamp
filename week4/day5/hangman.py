@@ -23,7 +23,10 @@ def check_letter(Theword = word):
                 blank[idx] = letter
         blank = "".join(blank)
     else:
-        extr.append(letter)
+        if letter in extr:
+            pass
+        else:    
+            extr.append(letter)
     print(blank)
     print(extr)
     print(len(extr))
