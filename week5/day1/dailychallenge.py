@@ -5,7 +5,7 @@ animals = {}
 class Farm:
     def __init__(self,name):
         self.name = name
-        
+    
     def add_animal(self, animal, quantity = 1):
         if animal in animals.keys():
             animals[animal] =+ int(quantity)
