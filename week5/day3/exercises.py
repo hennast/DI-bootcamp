@@ -8,15 +8,24 @@ class Currency:
         return f"{self.amount} {self.currency}s"
     def __add__(self, other):
         if type(other) == int:
-            return int(self.amount) + other
-        elif self.currency == other.currency:
-            return int(self.amount) + int(other.amount)
-        elif self.currency != other.currency:
-            return f"error, cannot add between {self.currency} and {other.currency}"          
+            return self.amount + other
+        else:
+            if self.currency == other.currency:
+                return self.amount + other.amount
+            elif self.currency != other.currency:
+                return f"error, cannot add between {self.currency} and {other.currency}"          
     def __int__(self) -> None:
         return self.amount
     def __iadd__(self, other):
-        return self.__add__(other)
+        if type(other) == int:
+            self.amount += other
+            return self
+        elif isinstance(other, Currency):
+            if self.currency == other.currency:
+                self.amount += other.amount
+                return self
+            else:
+                return f"error, cannot add between {self.currency} and {other.currency}"
         
 
     #Your code starts HERE
