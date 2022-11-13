@@ -5,10 +5,9 @@ import random
 
 class Exercise:
     exercises = {}
-    def __init__(self, exercise: str, type, level: float):
+    def __init__(self, exercise: str, level: float):
         self.exercise = exercise
         self.level = level
-        self.type = type
         if self.level not in Exercise.exercises:
             Exercise.exercises[self.level] = [self]
         else:
@@ -18,25 +17,24 @@ class Exercise:
     def __repr__(self) -> str:
         return str(self.__dict__)
 
-beginner_lift = Exercise("lift 5", "strength", 1)
-beginner_run = Exercise("run 5", "speed", 1)
-intermediate_lift = Exercise("lift 10", "strength", 3.5)
-intermediate_run = Exercise("run 10", "speed", 3.8)
-advanced_lift = Exercise("lift 15", "strength", 7.3)
-advanced_run = Exercise("run 15", "speed", 9)
+beginner_lift = Exercise("lift 5", 1)
+beginner_run = Exercise("run 5", 1)
+intermediate_lift = Exercise("lift 10", 3.5)
+intermediate_run = Exercise("run 10", 3.8)
+advanced_lift = Exercise("lift 15", 7.3)
+advanced_run = Exercise("run 15", 9)
 
 
 
 
 class Workout:
     available_exercises = Exercise.exercises
-    def __init__(self, goal, type):
+    def __init__(self, goal):
         self.goal = goal
-        self.type = type
-    def sort_bytype(self, available_exercises = available_exercises):
-        for exercise in available_exercises:
-            if self.type in available_exercises.level:
-                pass
+   # def sort_bytype(self, available_exercises = available_exercises):
+    #    for exercise in available_exercises:
+     #       if self.type in available_exercises.level:
+      #          pass
 
     def create_workout(self, available_exercises = available_exercises):
         
@@ -55,6 +53,6 @@ class Workout:
 
 my_goal = int(input("what level workout would you like"))
 
-my_workout = Workout(my_goal, "speed")
+my_workout = Workout(my_goal)
 my_workout.create_workout()
 
